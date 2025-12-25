@@ -1,10 +1,10 @@
 :root {
-    --background: #1a1b36;
-    --foreground: #fafafa;
-    --card: #111118;
-    --card-foreground: #fafafa;
-    --primary: #caa917;
-    --primary-foreground: #f8f8f8;
+    --background: #55687a;
+    --foreground: #191818;
+    --card: #000001;
+    --card-foreground: #de4e4e;
+    --primary: #0d2d78;
+    --primary-foreground: #eeeeee;
     --secondary: #1a1a24;
     --muted: #27272a;
     --muted-foreground: #a1a1aa;
@@ -47,15 +47,16 @@ img {
 }
 
 .text-gradient {
-    background: linear-gradient(135deg, #9631f4, #c084fc);
+    background: linear-gradient(115deg, #4e1b70, #1b3ebe);
     -webkit-background-clip: text;
+    font-size: 60px;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .section-label {
-    color: var(--primary);
+    color: rgb(15, 22, 119);
     font-weight: 500;
     font-size: 0.875rem;
     display: block;
@@ -90,7 +91,7 @@ img {
 .btn-primary {
     background: linear-gradient(135deg, #0d4088, #2b61eb);
     color: var(--primary-foreground);
-    box-shadow: 0 0 40px rgba(168, 85, 247, 0.3);
+    box-shadow: 0 0 40px rgba(177, 150, 17, 0.3);
 }
 
 .btn-primary:hover {
@@ -110,7 +111,7 @@ img {
     -webkit-backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(130, 213, 155, 0.1);
 }
 
 .btn-glass:hover {
@@ -128,7 +129,7 @@ img {
     left: 0;
     right: 0;
     z-index: 100;
-    background: rgba(10, 10, 15, 0.8);
+    background: rgba(75, 75, 230, 0.8);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -144,7 +145,7 @@ img {
 .logo {
     font-size: 1.25rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #a855f7, #c084fc);
+    background: linear-gradient(135deg, #fdfdfd, #f5f5f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -270,6 +271,7 @@ img {
     padding: 2rem;
 }
 
+
 .badge {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -292,7 +294,7 @@ img {
 
 .hero-subtitle {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
-    color: var(--muted-foreground);
+    color: rgb(13, 20, 48);
     max-width: 600px;
     margin: 0 auto 2rem;
 }
@@ -302,8 +304,10 @@ img {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: rem;
     flex-wrap: wrap;
+    color: rgb(140, 9, 81);
+    
 }
 
 .social-links {
@@ -374,14 +378,16 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    color: rgb(163, 147, 8);
 }
 
 .highlight-card {
     padding: 1.5rem;
-    background: linear-gradient(135deg, rgba(17, 17, 24, 0.8), rgba(26, 26, 36, 0.5));
-    border: 1px solid rgba(39, 39, 42, 0.5);
+    background: linear-gradient(135deg, rgba(3, 3, 116, 0.8), rgba(177, 7, 129, 0.5));
+    border: 1px solid rgba(233, 233, 241, 0.5);
     border-radius: var(--radius);
     transition: all 0.3s;
+   
 }
 
 .highlight-card:hover {
@@ -391,7 +397,7 @@ img {
 .highlight-icon {
     width: 48px;
     height: 48px;
-    background: rgba(168, 85, 247, 0.1);
+    background: rgba(215, 85, 247, 0.1);
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
@@ -420,12 +426,13 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    
 }
 
 .skill-category {
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(17, 17, 24, 0.8), rgba(26, 26, 36, 0.5));
-    border: 1px solid rgba(39, 39, 42, 0.5);
+    background: linear-gradient(135deg, rgba(12, 189, 174, 0.8), rgba(118, 13, 102, 0.5));
+    border: 1px solid rgba(237, 237, 240, 0.5);
     border-radius: 1rem;
 }
 
@@ -441,14 +448,27 @@ img {
 .dot {
     width: 12px;
     height: 12px;
-    background: var(--primary);
+    background: rgb(38, 70, 231);
     border-radius: 50%;
 }
 
 .skill-item {
     margin-bottom: 1rem;
 }
+.edu-row{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(11, 9, 9);
+   
+}
 
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .skill-info {
     display: flex;
     justify-content: space-between;
@@ -457,9 +477,12 @@ img {
 }
 
 .skill-info span:last-child {
-    color: var(--muted-foreground);
+    color:white;
 }
-
+.edu-row{
+    display: flex;
+    justify-content: center;
+}
 .skill-bar {
     height: 8px;
     background: var(--secondary);
@@ -507,6 +530,7 @@ img {
     height: 200px;
     object-fit: cover;
     transition: transform 0.5s;
+    
 }
 
 .project-card:hover .project-image img {
@@ -522,20 +546,23 @@ img {
 
 .project-content {
     padding: 1.5rem;
+    color: bisque;
 }
 
 .project-content h3 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
+  
 }
 
 .project-content p {
     font-size: 0.875rem;
-    color: var(--muted-foreground);
+    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -549,11 +576,11 @@ img {
 
 .project-tech span {
     padding: 0.25rem 0.75rem;
-    background: var(--secondary);
+    background: rgb(5, 102, 144);
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--primary);
+    color: rgb(0, 0, 0);
 }
 
 .project-links {
@@ -566,12 +593,12 @@ img {
     align-items: center;
     gap: 0.5rem;
     font-size: 0.875rem;
-    color: var(--muted-foreground);
+    color: greenyellow;
     transition: color 0.3s;
 }
 
 .project-links a:hover {
-    color: var(--primary);
+    color:white;
 }
 
 .contact {
@@ -611,7 +638,7 @@ img {
 .contact-icon {
     width: 48px;
     height: 48px;
-    background: rgba(168, 85, 247, 0.1);
+    background: rgba(114, 19, 204, 0.1);
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
@@ -636,7 +663,7 @@ img {
 }
 
 .form-group label {
-    display: block;
+    display: block ;
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -646,8 +673,8 @@ img {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    background: var(--secondary);
-    border: 1px solid var(--border);
+    background: rgb(243, 228, 231);
+    border: 1px solid rgb(255, 0, 187);
     border-radius: var(--radius);
     color: var(--foreground);
     font-family: inherit;
@@ -664,7 +691,7 @@ img {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: var(--muted-foreground);
+    color: rgb(6, 36, 134);
 }
 
 .form-group textarea {
@@ -681,13 +708,14 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+   
 }
 
 .footer-made {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--muted-foreground);
+    color: rgb(3, 6, 3);
 }
 
 .footer-social {
@@ -707,7 +735,7 @@ img {
 
 .footer-copyright {
     font-size: 0.875rem;
-    color: var(--muted-foreground);
+    color: black;
 }
 
 @media (max-width: 1024px) {
