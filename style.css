@@ -1,5 +1,5 @@
 :root {
-    --background: #55687a;
+    --background: #89c6c6;
     --foreground: #191818;
     --card: #000001;
     --card-foreground: #de4e4e;
@@ -47,7 +47,7 @@ img {
 }
 
 .text-gradient {
-    background: linear-gradient(115deg, #4e1b70, #1b3ebe);
+    background: linear-gradient(115deg, #0b3085, #3fcce5);
     -webkit-background-clip: text;
     font-size: 60px;
     background-clip: text;
@@ -57,10 +57,11 @@ img {
 
 .section-label {
     color: rgb(15, 22, 119);
-    font-weight: 500;
-    font-size: 0.875rem;
+    font-weight: 600;
+    font-size: 0.880rem;
     display: block;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .section-header {
@@ -89,17 +90,20 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #0d4088, #2b61eb);
-    color: var(--primary-foreground);
-    box-shadow: 0 0 40px rgba(177, 150, 17, 0.3);
+    background: linear-gradient(135deg, #183f58, #3072eb);
+    color: whitesmoke;
+    box-shadow: 0 0 40px rgba(24, 188, 233, 0.3);
+  
 }
 
 .btn-primary:hover {
     opacity: 0.9;
+    transform: scale(1.1);
+   color: rgb(119, 11, 97);
 }
 
 .btn-glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(135deg, rgb(200, 219, 200),rgb(32, 161, 45));
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -111,11 +115,14 @@ img {
     -webkit-backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
     border: 1px solid rgba(130, 213, 155, 0.1);
 }
 
 .btn-glass:hover {
-    background: var(--secondary);
+   background-color: rgb(101, 160, 116);
+   color: rgb(119, 11, 97);
+   transform: scale(1.1);
 }
 
 .btn-full {
@@ -129,7 +136,7 @@ img {
     left: 0;
     right: 0;
     z-index: 100;
-    background: rgba(75, 75, 230, 0.8);
+    background: rgba(36, 2, 89, 0.8);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -139,7 +146,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
+    height: 70px;
 }
 
 .logo {
@@ -159,12 +166,12 @@ img {
 .nav-links a {
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--muted-foreground);
+    color: white;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--foreground);
+ color: #15d9e8;
 }
 
 .nav-links .btn {
@@ -275,16 +282,28 @@ img {
 .badge {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(210, 204, 204, 0.05);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(17, 39, 188, 0.1);
     border-radius: 9999px;
-    color: var(--primary);
+    color:rgb(13, 70, 62);
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
 
+.profile-image{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    border: 4px solid #0752a8;
+    margin-left: 200px;
+    box-shadow: 0px  20px 50px rgb(100, 195, 239)
+    
+    
+}
 .hero h1 {
     font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: 700;
@@ -315,20 +334,20 @@ img {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    transform: translate(-5px,40px);
 }
 
 .social-icon {
     padding: 0.75rem;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(251, 211, 82, 0.05);
+    border: 2px solid rgba(17, 17, 17, 0.1);
     border-radius: 50%;
     transition: all 0.3s;
 }
 
 .social-icon:hover {
-    background: var(--secondary);
-    color: var(--primary);
+    background:linear-gradient(135deg,rgb(129, 157, 199), rgb(17, 129, 116)); 
+    color: white;
 }
 
 .scroll-down {
@@ -336,7 +355,7 @@ img {
     bottom: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--muted-foreground);
+    color: rgb(232, 240, 238);
     animation: float 2s ease-in-out infinite;
 }
 
@@ -383,14 +402,16 @@ img {
 
 .highlight-card {
     padding: 1.5rem;
-    background: linear-gradient(135deg, rgba(3, 3, 116, 0.8), rgba(177, 7, 129, 0.5));
-    border: 1px solid rgba(233, 233, 241, 0.5);
+    background: linear-gradient(135deg, rgba(38, 8, 172, 0.8), rgba(7, 177, 98, 0.5));
+    border: 1px solid rgba(244, 243, 239, 0.5);
     border-radius: var(--radius);
-    transition: all 0.3s;
+    transition: all 0.7s;
+    cursor: pointer;
    
 }
 
 .highlight-card:hover {
+    transform: scale(1.1);
     border-color: rgba(168, 85, 247, 0.5);
 }
 
@@ -431,7 +452,7 @@ img {
 
 .skill-category {
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(12, 189, 174, 0.8), rgba(118, 13, 102, 0.5));
+    background: linear-gradient(300deg, rgba(56, 32, 177, 0.8), rgba(70, 217, 163, 0.5));
     border: 1px solid rgba(237, 237, 240, 0.5);
     border-radius: 1rem;
 }
@@ -509,15 +530,18 @@ img {
 }
 
 .project-card {
-    background: linear-gradient(135deg, rgba(17, 17, 24, 0.8), rgba(26, 26, 36, 0.5));
+    background: linear-gradient(135deg, rgba(26, 26, 153, 0.8), rgba(26, 26, 36, 0.5));
     border: 1px solid rgba(39, 39, 42, 0.5);
     border-radius: 1rem;
     overflow: hidden;
     transition: all 0.5s;
+    cursor: pointer;
+   
 }
 
 .project-card:hover {
     border-color: rgba(168, 85, 247, 0.5);
+     box-shadow: 0 10px 70px rgb(104, 187, 236);
 }
 
 .project-image {
